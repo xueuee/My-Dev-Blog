@@ -1,0 +1,40 @@
+/* 
+------SELECTORS------
+1. Universal/All (*)
+2. type (p)
+3. class (.example)
+4. id (#example)
+
+------DESCENDANT SELECTOR------
+Best to use at most 3 levels
+
+>>> e.g.
+section p a{ }
+.container span{ }
+
+!important keyword overrides source order and specificity.
+added ater the semicolon(;)
+
+>>> e.g
+p {
+font-size: 12px !important; -> This will take precedence
+}
+example {
+font-size:16px;
+}
+
+*/
+body{
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: rgb(143, 127, 91);
+    background-color: rgb(222, 241, 254);
+    border-radius: 25px;
+    padding: 12px;
+}
+
+#description {
+    color: blue;
+    }
