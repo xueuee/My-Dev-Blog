@@ -38,3 +38,41 @@ h1 {
 #description {
     color: blue;
     }
+
+/* Week 3 */
+.flex-item {
+    background-color: rgb(251, 88, 88);
+    color: white;
+    margin: 10px;
+    padding: 30px;
+    width: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: Bold;
+  }
+  
+  .flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/* #description text changes colour depending on screen size */
+@media screen and (max-width: 740px) {
+    #description {
+        color: rgb(206, 114, 255);
+        }
+}
+
+/* for mobile phones */
+@media screen and (max-width: 480px) {
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .flex-item {
+      background-color: rgb(116, 221, 240);
+  } }
